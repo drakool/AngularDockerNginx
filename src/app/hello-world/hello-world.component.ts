@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./hello-world.component.css']
 })
 export class HelloWorldComponent {
+title: string="Hello World";
+getMin( a: number,b: number)
+{
+  if(a < b) 
+    return a;
+  return b;
+}
 
+ 
 }

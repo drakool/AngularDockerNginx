@@ -14,7 +14,7 @@ FROM nginx:1.19-alpine
 
 RUN rm -rf /usr/share/nginx/html/*
 
-COPY --from=builder /usr/src/app/dist/AngularDockerNginx /usr/share/nginx/html
+COPY --from=builder /usr/src/app/dist/angular-docker-nginx /usr/share/nginx/html
 
 COPY nginx.conf /etc/nginx/nginx.conf
 
